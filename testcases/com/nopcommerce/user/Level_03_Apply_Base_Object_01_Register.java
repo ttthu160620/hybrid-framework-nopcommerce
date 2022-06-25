@@ -16,7 +16,7 @@ import pageObjects.HomePageObject;
 import pageObjects.RegisterPageObjects;
 import pageUIs.RegisterPageUI;
 
-public class Level_03_Apply_Base_Object{
+public class Level_03_Apply_Base_Object_01_Register{
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String emailAddress, firstName, lastName, password;
@@ -31,7 +31,7 @@ public class Level_03_Apply_Base_Object{
 	 System.setProperty("webdriver.chrome.driver", projectPath + "\\browerDrivers\\chromedriver.exe");
 	 driver = new ChromeDriver();
 	 driver.manage().window().maximize();
-	 driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+	 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	 driver.get("https://demo.nopcommerce.com/");
 	 
 	 homePage = new HomePageObject(driver);
