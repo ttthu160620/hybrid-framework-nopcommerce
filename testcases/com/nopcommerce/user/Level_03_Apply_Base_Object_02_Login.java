@@ -67,7 +67,7 @@ public class Level_03_Apply_Base_Object_02_Login {
   }
   
   @Test
-  public void Login_03_Not_Existing_Email() {
+  public void Login_03_Email_Not_Found() {
 	  homePage.clickToLoginLink();
 	  loginPage.inputToEmailTextbox(notFoundEmail);
 	  loginPage.clickToLoginButton();
